@@ -215,4 +215,136 @@
         <h2>Sobre El Estudio de José</h2>
         <p>
           Trabajo el diseño como una herramienta para darle forma visual a tus ideas:
-          que se entiendan, se recuer
+          que se entiendan, se recuerden y se vean profesionales.
+        </p>
+        <p>
+          Sigo un proceso claro: entender qué quieres comunicar, definir el tono visual
+          adecuado y diseñar piezas que se adapten a los canales donde las vas a usar.
+        </p>
+        <p>
+          Si tienes una idea clara pero sientes que “no se ve como debería”, aquí es donde
+          la traducimos a diseño.
+        </p>
+      </div>
+
+      <div class="faq">
+        <h3>Preguntas frecuentes</h3>
+        <details>
+          <summary>¿Cómo empezamos un proyecto?</summary>
+          <p>
+            Primero reviso brevemente tu idea y referencias. Después te propongo
+            un alcance claro, tiempos y entregables para que sepas exactamente qué vas a recibir.
+          </p>
+        </details>
+        <details>
+          <summary>¿Y si no tengo claro qué quiero?</summary>
+          <p>
+            No pasa nada. A partir de tu contexto y objetivos, preparo opciones visuales
+            y te acompaño a elegir la dirección que mejor representa tu proyecto.
+          </p>
+        </details>
+        <details>
+          <summary>¿Qué pasa con los precios?</summary>
+          <p>
+            Cada proyecto se cotiza según alcance. Las identidades de marca completas
+            suelen partir de un rango orientativo, que definimos mejor después de ver tu caso.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO (Formspree + WhatsApp) -->
+  <section id="contacto" class="section section-dark container">
+    <div class="section-header">
+      <h2>¿Listo para que tu diseño esté a la altura de tus ideas?</h2>
+      <p>
+        Cuéntame brevemente qué necesitas y recibirás una respuesta con un siguiente paso
+        claro y una propuesta ajustada.
+      </p>
+    </div>
+
+    <div class="contact-layout">
+      <!-- Formulario conectado a Formspree -->
+      <form class="contact-form" action="https://formspree.io/f/xzzoqknb" method="POST">
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="_replyto" type="email" required />
+        </div>
+
+        <div class="field">
+          <label for="tipo">¿Qué necesitas?</label>
+          <select id="tipo" name="tipo">
+            <option value="identidad">Identidad de marca</option>
+            <option value="presentaciones">Presentaciones / documentos</option>
+            <option value="social">Contenido para redes</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="mensaje">Cuéntame de tu proyecto</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+
+        <input type="hidden" name="origen" value="Landing El Estudio de José" />
+
+        <button type="submit" class="btn primary full-width">
+          Enviar mensaje
+        </button>
+
+        <p class="form-note">
+          Uso tus datos solo para responder a tu mensaje.
+        </p>
+      </form>
+
+      <div class="contact-info">
+        <h3>También puedes escribirme directo</h3>
+        <p>
+          Si prefieres algo más rápido, puedes mandarme un mensaje por WhatsApp
+          o compartir tu proyecto junto con enlaces de referencia.
+        </p>
+        <ul class="contact-list">
+          <li><span>Portafolio:</span>
+            <a href="https://www.behance.net/josetorres28" target="_blank">
+              Behance /josetorres28
+            </a>
+          </li>
+          <li><span>WhatsApp:</span>
+            <a href="https://wa.me/527531659692" target="_blank">
+              753 165 9692
+            </a>
+          </li>
+        </ul>
+
+        <a href="https://wa.me/527531659692" target="_blank" class="btn primary full-width">
+          Hablar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 El Estudio de José — Diseño gráfico & branding.</p>
+  </footer>
+
+  <!-- Script ligero para parallax -->
+  <script>
+    window.addEventListener("scroll", () => {
+      const scrolled = window.pageYOffset;
+      const layers = document.querySelectorAll(".hero-bg-layer");
+      layers.forEach((layer, index) => {
+        const speed = (index + 1) * 0.15;
+        layer.style.transform = `translateY(${scrolled * speed * -0.2}px)`;
+      });
+    });
+  </script>
+</body>
+</html>
+
