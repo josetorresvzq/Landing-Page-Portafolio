@@ -332,15 +332,24 @@ body {
   margin-top: 32px;
 }
 
-/* OPINIONES */
+/* OPINIONES: tarjetas con scroll horizontal */
 
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+.reviews-scroller-wrapper {
+  position: relative;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 4px;
 }
 
 .review-card {
+  min-width: 260px;
+  max-width: 320px;
+  flex: 0 0 auto;
   background: var(--card);
   border-radius: var(--radius-md);
   padding: 18px 16px 18px;
@@ -365,6 +374,91 @@ body {
   font-size: 0.9rem;
   color: var(--text-soft);
 }
+
+.reviews-hint {
+  margin: 10px 0 0;
+  font-size: 0.8rem;
+  color: var(--text-soft);
+}
+
+/* CONFIARON EN MÍ: tira de logos */
+
+.logo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 24px;
+}
+
+.logo-item {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  background: rgba(11, 13, 18, 0.9);
+}
+
+.logo-item img {
+  height: 32px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* PROCESO DE TRABAJO */
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.process-step {
+  background: var(--card);
+  border-radius: var(--radius-md);
+  padding: 20px 18px 20px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.process-number {
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  margin-bottom: 6px;
+}
+
+.process-step h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.process-step p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+/* RESPONSIVE ajustes nuevos */
+
+@media (max-width: 960px) {
+  .process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .process-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .reviews-track {
+    padding-right: 8px;
+  }
+}
+
 
 /* SOBRE MÍ + FAQ */
 
@@ -604,3 +698,4 @@ body {
     padding: 8px 0;
   }
 }
+
