@@ -332,6 +332,40 @@ body {
   margin-top: 32px;
 }
 
+/* OPINIONES */
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.review-card {
+  background: var(--card);
+  border-radius: var(--radius-md);
+  padding: 18px 16px 18px;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.55);
+}
+
+.review-name {
+  margin: 0 0 4px;
+  font-weight: 600;
+  font-size: 0.94rem;
+}
+
+.review-stars {
+  margin: 0 0 8px;
+  color: #ffd36b;
+  font-size: 0.9rem;
+}
+
+.review-text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
 /* SOBRE MÍ + FAQ */
 
 .about {
@@ -521,7 +555,8 @@ body {
   }
 
   .grid-3,
-  .portfolio-grid {
+  .portfolio-grid,
+  .reviews-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -538,7 +573,7 @@ body {
 
 @media (max-width: 640px) {
   .container {
-    padding: 0 16px; /* más margen interno en móvil */
+    padding: 0 16px;
   }
 
   .section {
@@ -550,7 +585,8 @@ body {
   }
 
   .grid-3,
-  .portfolio-grid {
+  .portfolio-grid,
+  .reviews-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
