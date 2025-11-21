@@ -426,7 +426,7 @@ body {
 .contact-list {
   list-style: none;
   padding: 0;
-  margin: 10px 0 0;
+  margin: 10px 0 12px;
   font-size: 0.9rem;
 }
 
