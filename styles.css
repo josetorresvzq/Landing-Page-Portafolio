@@ -29,7 +29,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Layout base */
+/* Secciones */
 
 .section {
   padding: 80px min(7vw, 80px);
@@ -187,7 +187,7 @@ body {
   color: var(--text-soft);
 }
 
-/* Servicios */
+/* Grillas y tarjetas */
 
 .grid-3 {
   display: grid;
@@ -237,31 +237,8 @@ body {
 .portfolio-item {
   background: var(--card);
   border-radius: var(--radius-md);
-  padding: 14px 14px 16px;
+  padding: 14px 14px 18px;
   border: 1px solid var(--border-subtle);
-}
-
-.portfolio-thumb {
-  border-radius: 14px;
-  height: 180px;
-  margin-bottom: 12px;
-  background-size: cover;
-  background-position: center;
-}
-
-/* Placeholders de color/gradiente;
-   cámbialos por capturas de tus proyectos */
-
-.placeholder-1 {
-  background: linear-gradient(135deg, #ff6b4a, #ffcc6f);
-}
-
-.placeholder-2 {
-  background: linear-gradient(135deg, #5b8dff, #8be4ff);
-}
-
-.placeholder-3 {
-  background: linear-gradient(135deg, #9f6bff, #ff87d9);
 }
 
 .portfolio-item h3 {
@@ -270,9 +247,17 @@ body {
 }
 
 .portfolio-item p {
-  margin: 0;
+  margin: 0 0 10px;
   font-size: 0.9rem;
   color: var(--text-soft);
+}
+
+.portfolio-thumb-img {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+  margin-bottom: 12px;
+  object-fit: cover;
 }
 
 .section-cta-center {
@@ -348,6 +333,12 @@ body {
   border-color: var(--accent);
 }
 
+.form-note {
+  margin: 8px 0 0;
+  font-size: 0.78rem;
+  color: var(--text-soft);
+}
+
 .contact-info h3 {
   margin-top: 0;
 }
@@ -382,7 +373,7 @@ body {
   text-align: center;
 }
 
-/* Responsivo */
+/* Responsive */
 
 @media (max-width: 960px) {
   .hero {
