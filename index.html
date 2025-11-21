@@ -7,12 +7,24 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- BARRA SUPERIOR CON LOGO -->
+  <header class="top-bar">
+    <div class="top-bar-inner container">
+      <div class="top-logo">
+        <img src="logo.png" alt="Logo de El Estudio de José" />
+      </div>
+      <div class="top-name">
+        @El Estudio de Jose
+      </div>
+    </div>
+  </header>
+
   <!-- HERO con efecto parallax -->
   <div class="hero-parallax">
     <div class="hero-bg-layer hero-bg-1"></div>
     <div class="hero-bg-layer hero-bg-2"></div>
 
-    <header class="hero container">
+    <section class="hero container">
       <div class="hero-content">
         <p class="hero-kicker">Diseño gráfico estratégico</p>
         <h1>Diseño identidades y piezas visuales que hacen que tus ideas destaquen.</h1>
@@ -43,298 +55,317 @@
           <p class="hero-role">Diseño gráfico & branding para personas con ideas claras.</p>
         </div>
       </div>
-    </header>
+    </section>
   </div>
 
-  <!-- PROBLEMA (PAS) -->
-  <section id="problema" class="section section-dark container">
-    <div class="section-header">
-      <h2>Cuando el diseño no acompaña a tus ideas</h2>
-      <p>
-        Tienes algo valioso que contar, pero tus presentaciones, posts o marca no lo reflejan:
-        se ven genéricos, poco claros o poco profesionales.
-      </p>
-    </div>
-
-    <div class="grid-3">
-      <article class="card">
-        <h3>Presentaciones que no conectan</h3>
+  <!-- PROBLEMA -->
+  <section id="problema" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>Cuando el diseño no acompaña a tus ideas</h2>
         <p>
-          Slides saturadas o sin ritmo visual que hacen difícil seguir tu mensaje y entender tu propuesta.
+          Tienes algo valioso que contar, pero tus presentaciones, posts o marca no lo reflejan:
+          se ven genéricos, poco claros o poco profesionales.
         </p>
-      </article>
+      </div>
 
-      <article class="card">
-        <h3>Marcas sin identidad</h3>
-        <p>
-          Logos y colores que cambian todo el tiempo, sin un sistema visual que te haga reconocible.
-        </p>
-      </article>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Presentaciones que no conectan</h3>
+          <p>
+            Slides saturadas o sin ritmo visual que hacen difícil seguir tu mensaje y entender tu propuesta.
+          </p>
+        </article>
 
-      <article class="card">
-        <h3>Contenido que pasa desapercibido</h3>
-        <p>
-          Publicaciones que no llaman la atención ni comunican con claridad, aunque el fondo de la idea sea bueno.
-        </p>
-      </article>
+        <article class="card">
+          <h3>Marcas sin identidad</h3>
+          <p>
+            Logos y colores que cambian todo el tiempo, sin un sistema visual que te haga reconocible.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Contenido que pasa desapercibido</h3>
+          <p>
+            Publicaciones que no llaman la atención ni comunican con claridad, aunque el fondo de la idea sea bueno.
+          </p>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- SOLUCIÓN / SERVICIOS -->
-  <section id="servicios" class="section section-light container">
-    <div class="section-header">
-      <h2>Diseño para que te tomen en serio</h2>
-      <p>
-        Trabajo cada proyecto pensando en cómo se ve, qué comunica y qué necesitas que logre:
-        más claridad, más atención y más confianza cuando presentas tus ideas.
-      </p>
-    </div>
-
-    <div class="grid-3">
-      <article class="card">
-        <h3>Identidad de marca</h3>
+  <!-- SERVICIOS -->
+  <section id="servicios" class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <h2>Diseño para que te tomen en serio</h2>
         <p>
-          Un sistema visual coherente para que tu proyecto tenga un rostro claro y profesional.
+          Trabajo cada proyecto pensando en cómo se ve, qué comunica y qué necesitas que logre:
+          más claridad, más atención y más confianza cuando presentas tus ideas.
         </p>
-        <ul class="card-list">
-          <li>Logotipo principal y versiones</li>
-          <li>Paleta de color y tipografía</li>
-          <li>Guía básica de uso de marca</li>
-        </ul>
-      </article>
+      </div>
 
-      <article class="card">
-        <h3>Presentaciones & documentos</h3>
-        <p>
-          Pitch decks, PDFs y materiales ordenados, fáciles de leer y pensados para explicar mejor tus ideas.
-        </p>
-        <ul class="card-list">
-          <li>Diseño y maquetación de slides</li>
-          <li>Propuestas visuales y dossieres</li>
-          <li>Portadas y gráficos clave</li>
-        </ul>
-      </article>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Identidad de marca</h3>
+          <p>
+            Un sistema visual coherente para que tu proyecto tenga un rostro claro y profesional.
+          </p>
+          <ul class="card-list">
+            <li>Logotipo principal y versiones</li>
+            <li>Paleta de color y tipografía</li>
+            <li>Guía básica de uso de marca</li>
+          </ul>
+        </article>
 
-      <article class="card">
-        <h3>Contenido para redes</h3>
-        <p>
-          Plantillas y piezas visuales que mantienen tu estilo y ayudan a que tus mensajes se entiendan rápido.
-        </p>
-        <ul class="card-list">
-          <li>Piezas para social media</li>
-          <li>Grillas y layouts consistentes</li>
-          <li>Elementos listos para animar</li>
-        </ul>
-      </article>
+        <article class="card">
+          <h3>Presentaciones & documentos</h3>
+          <p>
+            Pitch decks, PDFs y materiales ordenados, fáciles de leer y pensados para explicar mejor tus ideas.
+          </p>
+          <ul class="card-list">
+            <li>Diseño y maquetación de slides</li>
+            <li>Propuestas visuales y dossieres</li>
+            <li>Portadas y gráficos clave</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Contenido para redes</h3>
+          <p>
+            Plantillas y piezas visuales que mantienen tu estilo y ayudan a que tus mensajes se entiendan rápido.
+          </p>
+          <ul class="card-list">
+            <li>Piezas para social media</li>
+            <li>Grillas y layouts consistentes</li>
+            <li>Elementos listos para animar</li>
+          </ul>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- PROYECTOS -->
-  <section id="proyectos" class="section section-dark container">
-    <div class="section-header">
-      <h2>Proyectos seleccionados</h2>
-      <p>
-        Una muestra de identidades, contenido para redes y sistemas visuales que he creado
-        para diferentes marcas y contextos.
-      </p>
-    </div>
-
-    <div class="portfolio-grid">
-      <!-- 1. RsMedia -->
-      <article class="portfolio-item">
-        <img src="rsmedia.jpg" alt="RsMedia - Mascota corporativa" class="portfolio-thumb-img" />
-        <h3>RsMedia · Mascota corporativa</h3>
+  <section id="proyectos" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>Proyectos seleccionados</h2>
         <p>
-          Personaje corporativo versátil para una marca de medios, pensado para redes
-          sociales y campañas promocionales.
-        </p>
-        <a href="https://www.behance.net/gallery/215204165/RsMedia-Mascota-Corporativa"
-           class="link-more" target="_blank">Ver más en Behance</a>
-      </article>
-
-      <!-- 2. Hammock -->
-      <article class="portfolio-item">
-        <img src="hammock.jpg" alt="Hammock - Estudio creativo" class="portfolio-thumb-img" />
-        <h3>Hammock · Estudio creativo</h3>
-        <p>
-          Identidad visual cálida y flexible para un estudio creativo, adaptable a
-          distintos soportes y piezas.
-        </p>
-        <a href="https://www.behance.net/gallery/210031205/Hammock-Estudio-Creativo"
-           class="link-more" target="_blank">Ver más en Behance</a>
-      </article>
-
-      <!-- 3. Sendero MX -->
-      <article class="portfolio-item">
-        <img src="senderomx.jpg" alt="Sendero MX - Social media design" class="portfolio-thumb-img" />
-        <h3>Sendero MX · Social media</h3>
-        <p>
-          Sistema de piezas para redes con tipografía clara y jerarquía visual para
-          comunicar mejor la información.
-        </p>
-        <a href="https://www.behance.net/gallery/215235761/Sendero-Mx-Social-Media-Design"
-           class="link-more" target="_blank">Ver más en Behance</a>
-      </article>
-
-      <!-- 4. Venus Beauty -->
-      <article class="portfolio-item">
-        <img src="venusbeauty.jpg" alt="Venus Beauty - Identidad de marca" class="portfolio-thumb-img" />
-        <h3>Venus Beauty · Identidad de marca</h3>
-        <p>
-          Marca de belleza con un estilo limpio y femenino, aplicada a piezas impresas
-          y digitales.
-        </p>
-        <a href="https://www.behance.net/gallery/215135299/Venus-Beauty-Identidad-de-Marca"
-           class="link-more" target="_blank">Ver más en Behance</a>
-      </article>
-
-      <!-- 5. Rs Agency -->
-      <article class="portfolio-item">
-        <img src="rsagency.jpg" alt="Rs Agency - Social media para abogados y seguros" class="portfolio-thumb-img" />
-        <h3>Rs Agency · Social media</h3>
-        <p>
-          Contenido para redes de una agencia enfocada en abogados y seguros,
-          equilibrando seriedad y claridad visual.
-        </p>
-        <a href="https://www.behance.net/gallery/216205835/Rs-Agency-Social-Media-AbogadosSeguros"
-           class="link-more" target="_blank">Ver más en Behance</a>
-      </article>
-    </div>
-
-    <div class="section-cta-center">
-      <a href="https://www.behance.net/josetorres28" target="_blank" class="btn primary">
-        Ver portafolio completo
-      </a>
-    </div>
-  </section>
-
-  <!-- SOBRE MÍ / FAQ -->
-  <section id="sobre-mi" class="section section-light container">
-    <div class="about">
-      <div class="about-text">
-        <h2>Sobre El Estudio de José</h2>
-        <p>
-          Trabajo el diseño como una herramienta para darle forma visual a tus ideas:
-          que se entiendan, se recuerden y se vean profesionales.
-        </p>
-        <p>
-          Sigo un proceso claro: entender qué quieres comunicar, definir el tono visual
-          adecuado y diseñar piezas que se adapten a los canales donde las vas a usar.
-        </p>
-        <p>
-          Si tienes una idea clara pero sientes que “no se ve como debería”, aquí es donde
-          la traducimos a diseño.
+          Una muestra de identidades, contenido para redes y sistemas visuales que he creado
+          para diferentes marcas y contextos.
         </p>
       </div>
 
-      <div class="faq">
-        <h3>Preguntas frecuentes</h3>
-        <details>
-          <summary>¿Cómo empezamos un proyecto?</summary>
+      <div class="portfolio-grid">
+        <article class="portfolio-item">
+          <img src="rsmedia.jpg" alt="RsMedia - Mascota corporativa" class="portfolio-thumb-img" />
+          <h3>RsMedia · Mascota corporativa</h3>
           <p>
-            Primero reviso brevemente tu idea y referencias. Después te propongo
-            un alcance claro, tiempos y entregables para que sepas exactamente qué vas a recibir.
+            Personaje corporativo versátil para una marca de medios, pensado para redes
+            sociales y campañas promocionales.
           </p>
-        </details>
-        <details>
-          <summary>¿Y si no tengo claro qué quiero?</summary>
+          <a href="https://www.behance.net/gallery/215204165/RsMedia-Mascota-Corporativa"
+             class="link-more" target="_blank">Ver más en Behance</a>
+        </article>
+
+        <article class="portfolio-item">
+          <img src="hammock.jpg" alt="Hammock - Estudio creativo" class="portfolio-thumb-img" />
+          <h3>Hammock · Estudio creativo</h3>
           <p>
-            No pasa nada. A partir de tu contexto y objetivos, preparo opciones visuales
-            y te acompaño a elegir la dirección que mejor representa tu proyecto.
+            Identidad visual cálida y flexible para un estudio creativo, adaptable a
+            distintos soportes y piezas.
           </p>
-        </details>
-        <details>
-          <summary>¿Qué pasa con los precios?</summary>
+          <a href="https://www.behance.net/gallery/210031205/Hammock-Estudio-Creativo"
+             class="link-more" target="_blank">Ver más en Behance</a>
+        </article>
+
+        <article class="portfolio-item">
+          <img src="senderomx.jpg" alt="Sendero MX - Social media design" class="portfolio-thumb-img" />
+          <h3>Sendero MX · Social media</h3>
           <p>
-            Cada proyecto se cotiza según alcance. Las identidades de marca completas
-            suelen partir de un rango orientativo, que definimos mejor después de ver tu caso.
+            Sistema de piezas para redes con tipografía clara y jerarquía visual para
+            comunicar mejor la información.
           </p>
-        </details>
+          <a href="https://www.behance.net/gallery/215235761/Sendero-Mx-Social-Media-Design"
+             class="link-more" target="_blank">Ver más en Behance</a>
+        </article>
+
+        <article class="portfolio-item">
+          <img src="venusbeauty.jpg" alt="Venus Beauty - Identidad de marca" class="portfolio-thumb-img" />
+          <h3>Venus Beauty · Identidad de marca</h3>
+          <p>
+            Marca de belleza con un estilo limpio y femenino, aplicada a piezas impresas
+            y digitales.
+          </p>
+          <a href="https://www.behance.net/gallery/215135299/Venus-Beauty-Identidad-de-Marca"
+             class="link-more" target="_blank">Ver más en Behance</a>
+        </article>
+
+        <article class="portfolio-item">
+          <img src="rsagency.jpg" alt="Rs Agency - Social media para abogados y seguros" class="portfolio-thumb-img" />
+          <h3>Rs Agency · Social media</h3>
+          <p>
+            Contenido para redes de una agencia enfocada en abogados y seguros,
+            equilibrando seriedad y claridad visual.
+          </p>
+          <a href="https://www.behance.net/gallery/216205835/Rs-Agency-Social-Media-AbogadosSeguros"
+             class="link-more" target="_blank">Ver más en Behance</a>
+        </article>
       </div>
-    </div>
-  </section>
 
-  <!-- CONTACTO (Formspree + WhatsApp) -->
-  <section id="contacto" class="section section-dark container">
-    <div class="section-header">
-      <h2>¿Listo para que tu diseño esté a la altura de tus ideas?</h2>
-      <p>
-        Cuéntame brevemente qué necesitas y recibirás una respuesta con un siguiente paso
-        claro y una propuesta ajustada.
-      </p>
-    </div>
-
-    <div class="contact-layout">
-      <!-- Formulario conectado a Formspree -->
-      <form class="contact-form" action="https://formspree.io/f/xzzoqknb" method="POST">
-        <div class="field">
-          <label for="nombre">Nombre</label>
-          <input id="nombre" name="nombre" type="text" required />
-        </div>
-
-        <div class="field">
-          <label for="email">Correo electrónico</label>
-          <input id="email" name="_replyto" type="email" required />
-        </div>
-
-        <div class="field">
-          <label for="tipo">¿Qué necesitas?</label>
-          <select id="tipo" name="tipo">
-            <option value="identidad">Identidad de marca</option>
-            <option value="presentaciones">Presentaciones / documentos</option>
-            <option value="social">Contenido para redes</option>
-            <option value="otro">Otro</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="mensaje">Cuéntame de tu proyecto</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-        </div>
-
-        <input type="hidden" name="origen" value="Landing El Estudio de José" />
-
-        <button type="submit" class="btn primary full-width">
-          Enviar mensaje
-        </button>
-
-        <p class="form-note">
-          Uso tus datos solo para responder a tu mensaje.
-        </p>
-      </form>
-
-      <div class="contact-info">
-        <h3>También puedes escribirme directo</h3>
-        <p>
-          Si prefieres algo más rápido, puedes mandarme un mensaje por WhatsApp
-          o compartir tu proyecto junto con enlaces de referencia.
-        </p>
-        <ul class="contact-list">
-          <li><span>Portafolio:</span>
-            <a href="https://www.behance.net/josetorres28" target="_blank">
-              Behance /josetorres28
-            </a>
-          </li>
-          <li><span>WhatsApp:</span>
-            <a href="https://wa.me/527531659692" target="_blank">
-              753 165 9692
-            </a>
-          </li>
-        </ul>
-
-        <a href="https://wa.me/527531659692" target="_blank" class="btn primary full-width">
-          Hablar por WhatsApp
+      <div class="section-cta-center">
+        <a href="https://www.behance.net/josetorres28" target="_blank" class="btn primary">
+          Ver portafolio completo
         </a>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi" class="section section-light">
+    <div class="container">
+      <div class="about">
+        <div class="about-text">
+          <h2>Sobre El Estudio de José</h2>
+          <p>
+            Trabajo el diseño como una herramienta para darle forma visual a tus ideas:
+            que se entiendan, se recuerden y se vean profesionales.
+          </p>
+          <p>
+            Sigo un proceso claro: entender qué quieres comunicar, definir el tono visual
+            adecuado y diseñar piezas que se adapten a los canales donde las vas a usar.
+          </p>
+          <p>
+            Si tienes una idea clara pero sientes que “no se ve como debería”, aquí es donde
+            la traducimos a diseño.
+          </p>
+        </div>
+
+        <div class="faq">
+          <h3>Preguntas frecuentes</h3>
+          <details>
+            <summary>¿Cómo empezamos un proyecto?</summary>
+            <p>
+              Primero reviso brevemente tu idea y referencias. Después te propongo
+              un alcance claro, tiempos y entregables para que sepas exactamente qué vas a recibir.
+            </p>
+          </details>
+          <details>
+            <summary>¿Y si no tengo claro qué quiero?</summary>
+            <p>
+              No pasa nada. A partir de tu contexto y objetivos, preparo opciones visuales
+              y te acompaño a elegir la dirección que mejor representa tu proyecto.
+            </p>
+          </details>
+          <details>
+            <summary>¿Qué pasa con los precios?</summary>
+            <p>
+              Cada proyecto se cotiza según alcance. Definimos el rango una vez que conozco mejor
+              tu idea y qué piezas necesitas.
+            </p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>¿Listo para que tu diseño esté a la altura de tus ideas?</h2>
+        <p>
+          Cuéntame brevemente qué necesitas y recibirás una respuesta con un siguiente paso
+          claro y una propuesta ajustada.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <form class="contact-form" action="https://formspree.io/f/xzzoqknb" method="POST">
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="_replyto" type="email" required />
+          </div>
+
+          <div class="field">
+            <label for="tipo">¿Qué necesitas?</label>
+            <select id="tipo" name="tipo">
+              <option value="identidad">Identidad de marca</option>
+              <option value="presentaciones">Presentaciones / documentos</option>
+              <option value="social">Contenido para redes</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="mensaje">Cuéntame de tu proyecto</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+
+          <input type="hidden" name="origen" value="Landing El Estudio de José" />
+
+          <button type="submit" class="btn primary full-width">
+            Enviar mensaje
+          </button>
+
+          <p class="form-note">
+            Uso tus datos solo para responder a tu mensaje.
+          </p>
+        </form>
+
+        <div class="contact-info">
+          <h3>También puedes escribirme directo</h3>
+          <p>
+            Si prefieres algo más rápido, puedes mandarme un mensaje por WhatsApp
+            o compartir tu proyecto junto con enlaces de referencia.
+          </p>
+          <ul class="contact-list">
+            <li><span>Portafolio:</span>
+              <a href="https://www.behance.net/josetorres28" target="_blank">
+                Behance /josetorres28
+              </a>
+            </li>
+            <li><span>WhatsApp:</span>
+              <a href="https://wa.me/527531659692" target="_blank">
+                753 165 9692
+              </a>
+            </li>
+          </ul>
+
+          <a href="https://wa.me/527531659692" target="_blank" class="btn primary full-width">
+            Hablar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER con logo e iconos de redes -->
   <footer class="footer">
-    <p>© 2025 El Estudio de José — Diseño gráfico & branding.</p>
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Logo de El Estudio de José" class="footer-logo" />
+        <div class="footer-text">
+          <p>@El Estudio de Jose</p>
+          <p>Diseño gráfico & branding</p>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <!-- Cuando tengas los enlaces reales, solo cambia el href -->
+        <a href="#" target="_blank" class="social-pill">Instagram · @ElEstudioDeJose</a>
+        <a href="#" target="_blank" class="social-pill">Facebook · El Estudio de Jose</a>
+        <a href="#" target="_blank" class="social-pill">Behance · /josetorres28</a>
+      </div>
+    </div>
   </footer>
 
-  <!-- Script ligero para parallax -->
+  <!-- Script parallax -->
   <script>
     window.addEventListener("scroll", () => {
       const scrolled = window.pageYOffset;
@@ -347,4 +378,3 @@
   </script>
 </body>
 </html>
-
